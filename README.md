@@ -144,6 +144,7 @@ Create a superuser to access the Django admin interface:
 9.  **Unit Testing**
     - cd inventory_management/inventory
     - mkdir tests
+      
      ** Run command**
     - python manage.py test inventory.tests.test
       

@@ -1,0 +1,5 @@
+Django>=3.2,<4.0
+djangorestframework
+django-redis
+djangorestframework-simplejwt
+psycopg2-binary  # PostgreSQL adapter for Python

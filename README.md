@@ -149,7 +149,7 @@ Create a superuser to access the Django admin interface:
    - python manage.py runserver
 
 8. **Run the API**
-   -Refer the documention to the CRUD operations
+   -Refer the documention to run the API for CRUD operations
    
 9.  **Unit Testing**
     - cd inventory_management/inventory

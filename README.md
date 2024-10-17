@@ -40,42 +40,7 @@ This is a Django-based application for managing inventory items. It includes fea
      ALTER ROLE yourusername SET timezone TO 'UTC';
      GRANT ALL PRIVILEGES ON DATABASE inventory_management TO yourusername;
      ```
- # Logging Configuration
-   LOGGING = {
-       'version': 1,
-       'disable_existing_loggers': False,
-       'formatters': {
-           'verbose': {
-               'format': '{levelname} {asctime} {module} {message}',
-               'style': '{',
-           },
-           'simple': {
-               'format': '{levelname} {message}',
-               'style': '{',
-           },
-       },
-       'handlers': {
-           'console': {
-               'class': 'logging.StreamHandler',
-               'formatter': 'simple',
-           },
-           'file': {
-               'class': 'logging.FileHandler',
-               'filename': 'django_inventory.log',
-               'formatter': 'verbose',
-           },
-       },
-       'loggers': {
-           'django': {
-               'handlers': ['console', 'file'],
-               'level': 'DEBUG',
-           },
-           'inventory': {
-               'handlers': ['console', 'file'],
-               'level': 'DEBUG',
-           },
-       },
-   }
+
 
 ### Install Required Python Packages
 
@@ -119,6 +84,42 @@ CACHES = {
         }
     }
 }
+ # Logging Configuration
+   LOGGING = {
+       'version': 1,
+       'disable_existing_loggers': False,
+       'formatters': {
+           'verbose': {
+               'format': '{levelname} {asctme} {module} {message}',
+               'style': '{',
+           },
+           'simple': {
+               'format': '{levelname} {message}',
+               'style': '{',
+           },
+       },
+       'handlers': {
+           'console': {
+               'class': 'logging.StreamHandler',
+               'formatter': 'simple',
+           },
+           'file': {
+               'class': 'logging.FileHandler',
+               'filename': 'django_inventory.log',
+               'formatter': 'verbose',
+           },
+       },
+       'loggers': {
+           'django': {
+               'handlers': ['console', 'file'],
+               'level': 'DEBUG',
+           },
+           'inventory': {
+               'handlers': ['console', 'file'],
+               'level': 'DEBUG',
+           },
+       },
+   }
 
 INSTALLED_APPS = [
     ...

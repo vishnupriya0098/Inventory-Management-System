@@ -48,7 +48,7 @@ To install the required packages, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/inventory_management.git
+   git clone https://github.com/vishnupriya0098/Inventory-Management-System.git
    cd inventory_management
 
 
